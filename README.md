@@ -1,6 +1,5 @@
 # iot_pop_button
 
-## Summary
 Forked version of [brokeh/pophttp](https://github.com/brokeh/pophttp) with added
 support for ROS. This is to be used in conjunction to a Logi Pop smart-button,
 though could technically be used by any device that supports LIFX.
@@ -11,25 +10,26 @@ any soft-real-time control of a robot using this button.
 ## Run
 
 ```
-rosrun pop_button pop_button_node.py
+rosrun iot_pop_button pop_button_node.py
 ```
 
 or if not available use keyboard as a fake button
 
 ```
-rosrun pop_button fake_button_node.py
+rosrun iot_pop_button fake_button_node.py
 ```
 
 ## Pop resources
 https://support.logitech.com/en_us/product/pop-smart-button/faq
 
 --------------------------------------------------------------------------------
-Original README. Make sure to checkout the original repo https://github.com/brokeh/pophttp
+#Original README from [pophttp](https://github.com/brokeh/pophttp)
+Make sure to checkout the original repo https://github.com/brokeh/pophttp.
 
-# How it works
+## How it works
 pophttp is run as a service on a computer and acts like a fake LIFX light running on your LAN. You then configure the Logitech pop app to make this fake light different colors for each different switch and each unique color is translated into a standard HTTP request.
 
-# Getting started
+## Getting started
 1. Install Python 2.6 or later, or Python 3.0 or later if you don't already have 1 of these versions installed.
 2. Clone the repo and run `pophttp.py` with `-vv` from the local directory.
     ```bash
@@ -57,12 +57,12 @@ pophttp is run as a service on a computer and acts like a fake LIFX light runnin
 9. Restart the python script for the config changes to take effect and you're done. Just repeat steps 6 - 8 for each switch.
 10. Once you're done configuring everything, the `-vv` can be removed from the command to reduce the amount of output to the console.
 
-# Advanced configuration
+## Advanced configuration
 If you already have LIFX hardware it is recommended to also include the `ip_filter` option in the `config.ini` file to only respond to your pop bridge. You can find the IP of the bridge in the logs when running with `-vv`. This will prevent the fake light showing up in the LIFX app.
 
 There are further configuration options available too. Check out the `config-sample.ini` provided to see a list of all configuration options and details on how to use them.
 
-# Running with Docker
+## Running with Docker
 This repository also contains a `Dockerfile` to allow it to be built into a Docker image.
 1. Build a Docker image and run it with the verbose logging so the unconfigured switches can be seen
     ```bash
