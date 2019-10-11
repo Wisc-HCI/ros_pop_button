@@ -23,7 +23,8 @@ rosrun iot_pop_button fake_button_node.py
 https://support.logitech.com/en_us/product/pop-smart-button/faq
 
 --------------------------------------------------------------------------------
-#Original README from [pophttp](https://github.com/brokeh/pophttp)
+# Original README 
+From [pophttp](https://github.com/brokeh/pophttp)
 Make sure to checkout the original repo https://github.com/brokeh/pophttp.
 
 ## How it works
