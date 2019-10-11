@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>iot_pop_button</name>
+  <name>ros_pop_button</name>
   <version>0.0.0</version>
-  <description>The iot_pop_button package</description>
+  <description>The ros_pop_button package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
