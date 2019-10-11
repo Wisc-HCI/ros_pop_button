@@ -1,22 +1,22 @@
-# iot_pop_button
+# ros_pop_button
 
 Forked version of [brokeh/pophttp](https://github.com/brokeh/pophttp) with added
 support for ROS. This is to be used in conjunction to a Logi Pop smart-button,
 though could potentially be used by any device that supports LIFX.
 
 This solution was motivated to get around the IFTTT time delay which prevented
-any soft-real-time control of a robot using this button.
+any soft-real-time control of a robot using this button. 
 
 ## Run
 
 ```
-rosrun iot_pop_button pop_button_node.py
+rosrun ros_pop_button pop_button_node.py
 ```
 
 or if not available use keyboard as a fake button
 
 ```
-rosrun iot_pop_button fake_button_node.py
+rosrun ros_pop_button fake_button_node.py
 ```
 
 ## Pop resources
