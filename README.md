@@ -2,7 +2,7 @@
 
 Forked version of [brokeh/pophttp](https://github.com/brokeh/pophttp) with added
 support for ROS. This is to be used in conjunction to a Logi Pop smart-button,
-though could technically be used by any device that supports LIFX.
+though could potentially be used by any device that supports LIFX.
 
 This solution was motivated to get around the IFTTT time delay which prevented
 any soft-real-time control of a robot using this button.
