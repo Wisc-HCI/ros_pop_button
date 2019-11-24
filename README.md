@@ -12,7 +12,7 @@ Check out a copy of the original README from the forked version [here](./FORKED_
 
 ## Steup
 
-First start by installing the 'Logitech Pop' application on your mobile device.
+First start by installing the *Logitech Pop* application on your mobile device.
 
 Next, if this is this is a new button, then connect your mobile device to that network. Otherwise connect to the network that the button has previously been configured to. If uncertain which network or if you would like to change then check out the [FAQ](https://support.logitech.com/en_us/product/pop-smart-button/faq) to factory reset the bridge. 
 
@@ -30,7 +30,7 @@ To run the button node,
 rosrun ros_pop_button pop_button_node.py
 ```
 
-If button hardware is not avaliable then use the fake button node which has the same ROS topic interface but is mapped to the `Enter` button on the keyboard.
+If button hardware is not avaliable then use the fake button node which has the same ROS topic interface but is mapped to the *Enter* button on the keyboard.
 
 ```
 rosrun ros_pop_button fake_button_node.py
